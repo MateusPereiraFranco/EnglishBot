@@ -1,0 +1,12 @@
+# Ignora arquivos de configuração de ambiente e segredos
+.env
+
+# Ignora cache de Python (diretórios compilados)
+__pycache__
+
+# Ignora arquivos de log, se houver
+*.log
+
+# Ignora arquivos e pastas criadas pelo Venv (Ambiente Virtual)
+venv/
+.venv/
