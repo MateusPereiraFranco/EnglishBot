@@ -22,10 +22,18 @@ class Usuario(Base):
     wa_jid = Column(String, primary_key=True, index=True) 
     nome = Column(String, default="Desconhecido")
     nivel_ingles = Column(String, default="Não definido")
+    total_exercicios_feitos = Column(Integer, default=0)
+    total_acertos = Column(Integer, default=0)
+    exercicio_tipo = Column(String, default=None)
+    exercicio_correto_letra = Column(String, default=None)
+    exercicio_correto_texto = Column(String, default=None)
+    exercicio_id = Column(String, default=None)
+    exercicio_dados_json = Column(String, default=None)
     estado = Column(String, default="inicio") 
     pontuacao = Column(Integer, default=0)
     pergunta_atual_id = Column(Integer, default=0)
     ultima_interacao = Column(DateTime, default=datetime.now)
+    
 
 class Licao(Base):
     __tablename__ = "licoes"
